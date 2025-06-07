@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 export default function Home() {
   const router = useRouter()
 const [text, setText] = useState("")
@@ -9,6 +10,12 @@ const [text, setText] = useState("")
   const createTree = () =>{
     router.push(`/generate?handle=${text}`)
   }
+  useEffect(() => {
+    fetch("/api/add", {
+      method: "POST",
+      body: JSON.stringify({ hello: "world" }),
+    });
+  }, []);
 
   return (
     <main>
