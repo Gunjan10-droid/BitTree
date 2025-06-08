@@ -29,7 +29,7 @@ const [text, setText] = useState("")
         </div>
         </div>
         <div className="flex justify-center items-center flex-col mr-[10vw]">
-          <img src="/home.png" alt="homepage image"/>
+          <Image src="/home.png" alt="homepage image"/>
         </div>
       </section>
       <section className="bg-[#780016] min-h-screen grid grid-cols-2">
@@ -41,7 +41,7 @@ const [text, setText] = useState("")
         </div>
         </div>
         <div className="flex justify-center items-center flex-col mr-[10vw]">
-          <img src="/share.png" alt="share image"/>
+          <Image src="/share.png" alt="share image"/>
         </div>
       </section>
     </main>
